@@ -1,0 +1,44 @@
+$linesCount : 11;
+$cellsInLine : 11;
+
+$width : 35px * $linesCount;
+$height: 35px * $cellsInLine;
+
+.magic-hat {
+  width: $width;
+  height: $height;
+  margin: auto;
+  background-color: #ecf0f1;
+
+  &__line {
+    float: left;
+    width: 100%;
+  }
+
+  &__cell {
+    $margin : 4px;
+    
+    opacity: 0.6;
+    border-radius: 5px;
+    width:  ($width/$cellsInLine) - ($margin * 2);
+    height: ($height/$linesCount)  - ($margin * 2);
+    margin: $margin;
+
+    float: left;
+
+    &--active {
+      border: $margin - 1 dotted #f39c12;
+      margin: 1px;
+      opacity: 1;
+    }
+
+    &--type {
+      &_0 {background-color: #ecf0f1 ;}
+      &_1 {background-color: #1abc9c ;}
+      &_2 {background-color: #3498db ;}
+      &_3 {background-color: #e74c3c ;}
+      &_4 {background-color: #9b59b6 ;}
+
+    }
+  }
+}

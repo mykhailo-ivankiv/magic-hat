@@ -1,0 +1,29 @@
+.magic-hat {
+  width: 385px;
+  height: 385px;
+  margin: auto;
+  background-color: #ecf0f1; }
+  .magic-hat__line {
+    float: left;
+    width: 100%; }
+  .magic-hat__cell {
+    opacity: 0.6;
+    border-radius: 5px;
+    width: 27px;
+    height: 27px;
+    margin: 4px;
+    float: left; }
+    .magic-hat__cell--active {
+      border: 3px dotted #f39c12;
+      margin: 1px;
+      opacity: 1; }
+    .magic-hat__cell--type_0 {
+      background-color: #ecf0f1; }
+    .magic-hat__cell--type_1 {
+      background-color: #1abc9c; }
+    .magic-hat__cell--type_2 {
+      background-color: #3498db; }
+    .magic-hat__cell--type_3 {
+      background-color: #e74c3c; }
+    .magic-hat__cell--type_4 {
+      background-color: #9b59b6; }
