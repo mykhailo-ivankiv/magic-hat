@@ -4,7 +4,6 @@ var sass = require("gulp-sass");
 
 var plumber = require('gulp-plumber');
 
-
 gulp.task("default", function () {
     gulp.src("src/js/**")
 
